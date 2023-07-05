@@ -63,9 +63,10 @@ function salvarDados() {
   
         var dateElemento = document.createElement("p");
         if (tarefa.taskDate) {
-          var taskDate = new Date(tarefa.taskDate);
+          var taskDate = new Date(tarefa.taskDate + "T00:00:00");
           if (!isNaN(taskDate.getTime())) {
-            dateElemento.textContent = taskDate.toLocaleDateString("pt-BR");
+            var options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+            dateElemento.textContent = taskDate.toLocaleDateString("pt-BR", options);
           }
         }
         card.appendChild(dateElemento);
