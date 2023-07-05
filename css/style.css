@@ -1,0 +1,56 @@
+* {
+    margin: 5px;
+  }
+  
+  .dark .card {
+    background-color: rgb(44, 44, 44);
+  }
+  
+  .dark .addTask{
+    background-color: rgb(44, 44, 44);
+  }
+  
+  .dark {
+    background-color: black;
+    color: #ffffff;
+  }
+  
+  .card {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin: 12px;
+    padding: 10px;
+  }
+  
+  #dadosSalvos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .addTask {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    margin: 15px;
+    border-radius: 10px;
+    width: 25vw;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .mytasks {
+    display: flex;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .addTask {
+      width: 100vw;
+    }
+  
+    .card {
+      margin: 0;
+      width: 100vw;
+    }
+  }
